@@ -1,2 +1,9 @@
 # Project exclude paths
 /venv/
+
+.idea/
+.idea/.gitignore
+.idea/Discord helper.iml
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
