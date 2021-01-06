@@ -28,10 +28,7 @@ jobs:
       - name: Install depends
         run: |
           python3 -m pip install discord.py
-          python3 -m pip install python-dotenv
       - name: Host
-        env:
-          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
         run: |
           ls
-          python3 bot.py
+          python3 bot.py ${{ secrets.DISCORD_TOKEN }}
