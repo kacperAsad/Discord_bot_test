@@ -20,14 +20,6 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    brooklyn_99_quotes = [
-        'I\'m the human form of the 💯 emoji.',
-        'Bingpot!',
-        (
-            'Cool. Cool cool cool cool cool cool cool, '
-            'no doubt no doubt no doubt no doubt.'
-        ),
-    ]
 
     if message.content == 'dm':
         await message.member.create_dm()
@@ -36,5 +28,5 @@ async def on_message(message):
         return
 
 
-    await message.channel.send(Byczq)
+    await message.channel.send("BYCZQ")
 client.run(TOKEN)
