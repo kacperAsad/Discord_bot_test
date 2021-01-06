@@ -31,4 +31,4 @@ jobs:
       - name: Host
         
         run: 
-          python3 bot.py ${{ secrets.DISCORD_TOKEN }}
+          python3 bot.py XD argumenty nie chcą mi działać
