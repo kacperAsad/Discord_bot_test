@@ -2,8 +2,10 @@ import discord
 import os
 from sys import argv
 
+print("WYPISYWANIE ARGUMENTÓW")
 for arg in argv:
     print(arg)
+print("ZAKOŃCZONO")
 
 
 # for arg in argv:
