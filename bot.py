@@ -3,7 +3,11 @@ import os
 from sys import argv
 
 
-TOKEN = argv[1]
+for arg in argv:
+    if arg.startswith('-'):
+
+        TOKEN = arg.replace("-", " ", 1)
+
 
 client = discord.Client()
 
