@@ -12,17 +12,13 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - name: Install python
-      run: |
-        xcode-select --install
-        ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-        brew install python3
-      
     - name: Install dependencies
       run: |
-        python3 -m pip install --upgrade pip
+        python -m pip install --upgrade pip
+        python -m pip install discord.py
+        python -m pip install python-dotenv
     - name: Build and publish
       env:
         DISCORD_BOT: ${{ secrets.DISCORD_BOT }}
       run: |
-        python3 bot.py
+        python bot.py
