@@ -2,6 +2,7 @@ import discord
 import os
 from sys import argv
 
+
 TOKEN = argv[1]
 
 client = discord.Client()
