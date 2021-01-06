@@ -29,5 +29,6 @@ jobs:
         run: |
           python3 -m pip install discord.py
       - name: Host
+        
         run: 
-          python3 bot.py -${{ secrets.DISCORD_TOKEN }}
+          python3 bot.py ${{ secrets.DISCORD_TOKEN }}
