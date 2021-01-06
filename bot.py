@@ -1,9 +1,9 @@
 import discord
 import os
-from dotenv import load_dotenv
+from sys import argv
 
-load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
+
+TOKEN = argv[1]
 
 client = discord.Client()
 
