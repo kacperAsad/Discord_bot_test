@@ -21,7 +21,7 @@ async def on_message(message):
         return
 
     if message.content == 'xd':
-        message.channel.send("XD no beka")
+        await message.channel.send("XD no beka")
 
 
     await message.channel.send("BYCZQ")
