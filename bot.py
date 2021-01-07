@@ -20,12 +20,8 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-
-    if message.content == 'dm':
-        await message.member.create_dm()
-        await message.dm_channel.send(
-        f'Hi, welcome to my Discord server!')
-        return
+    if message.content == 'xd':
+        message.channel.send("XD no beka")
 
 
     await message.channel.send("BYCZQ")
